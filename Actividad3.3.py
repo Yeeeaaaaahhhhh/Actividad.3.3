@@ -83,7 +83,7 @@ while opcionC == 'S':
             saldo = saldo - 30
             print("Aqui tiene su Snicker, su saldo restante es de", "$",saldo)
             Snigger = Snigger -1
-            print("El inventario de Snicker es de",snicker)
+            print("El inventario de Snicker es de",Snigger)
     elif opcion == 9:
         if saldo >=100 and cajitaF>0:
             saldo = saldo - 100
@@ -93,7 +93,7 @@ while opcionC == 'S':
         else :
             print("Su saldo es insuficiente")
     elif opcion == 10:
-        if saldo >=250 and cajitaF>0:
+        if saldo >=250 and Sahur>0:
             saldo = saldo - 250
             print("Felicidades usted a adquirido al grandioso TungTungSahur, su saldo restante es de", "$",saldo)
             Sahur = Sahur -1
