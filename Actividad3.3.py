@@ -131,7 +131,7 @@ while opcionC == 'S':
     opcionC = input("Quiere seguir comprando en la maquina?, recuerde poner una S si si o una N si no")
 print("Gracias por utilizar la maquina de ventas, tenga un bonito dia")
 
-
+#hola
 
 
 
