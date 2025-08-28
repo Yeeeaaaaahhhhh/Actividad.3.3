@@ -1,9 +1,10 @@
-opcionC=input("""Bienvenido a la maquina de ventas, presione S si quiere comprar algo o N si no""")
+opcionC=input("""Bienvenido a la maquina de ventas, presione S si quiere comprar algo o N si no: """)
 cocaC,aguaN,Sabritas,chiclesM,takisF,galletasP,kitK,Snigger,cajitaF,Sahur = 10,10,5,3,5,4,3,5,1,1
 saldo = 0
+descuento_acertijo = 1
 while opcionC == 'S':
 
-    saldoA = int(input("Ingrese el saldo que desee"))
+    saldoA = int(input("Ingrese el saldo que desee: "))
     if saldoA == 0:
         saldo = saldo
         print("Su saldo es de",saldo)
@@ -23,7 +24,9 @@ while opcionC == 'S':
         7.-Kit kat, $30, 3
         8.-Snicker, $30, 5
         9.-Cajita feliz, $100, 1
-        10.-Muñeco de TungTungSahur, $250, 1"""))
+        10.-Muñeco de TungTungSahur, $250, 1
+        11.-Sorpresa :3
+        """))
     if opcion == 1:
         if saldo >=20 and cocaC >0:
             saldo = saldo - 20
@@ -97,7 +100,33 @@ while opcionC == 'S':
             saldo = saldo - 250
             print("Felicidades usted a adquirido al grandioso TungTungSahur, su saldo restante es de", "$",saldo)
             Sahur = Sahur -1
-        else :
+#Esta es la sorpresa, lo que hizo pablo
+    elif opcion == 11:
+
+        print('''Bienvenido a la sorpresa! Necesitas el codigo numerico correcto para poder avanzar.
+        Primero resuelve un acertijo, despues encuentra la palabra en la sopa de letras.
+        Una vez teniendo la respuesta, usa la palabra para encontrar el codigo 
+        Pista: A = 1,
+        
+        Acertijo: El hombre que lo vendió no lo quería. El hombre que lo compró no lo necesitaba. El hombre que lo usó no lo conocía.
+        
+        O U T A Z Q D
+        U F K T M S Q
+        P N F A B U P
+        S E E U M J A
+        B E V D X K U
+        O I I E R J Z
+        C J N T I I L''')
+        acertijo = int(input("Ingrese el codigo aqui:"))
+        if acertijo == 1201214:
+            print("Felicidades! Resolviste el acertijo! Te haz ganado un 66% de descuento en todas tus compras")
+            descuento_acertijo = 0.33
+            continue
+        else:
+            print("El codigo es incorrecto :(")
+
+
+    else:
             print("Su saldo es insuficiente")
     opcionC = input("Quiere seguir comprando en la maquina?, recuerde poner una S si si o una N si no")
 print("Gracias por utilizar la maquina de ventas, tenga un bonito dia")
