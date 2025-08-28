@@ -133,5 +133,7 @@ print("Gracias por utilizar la maquina de ventas, tenga un bonito dia")
 
 #hola
 
+#hola
+
 
 
