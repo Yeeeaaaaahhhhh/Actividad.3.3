@@ -250,6 +250,7 @@ while opcionC == 'S':
         Primero resuelve un acertijo, despues encuentra la palabra en la sopa de letras.
         Una vez teniendo la respuesta, usa la palabra para encontrar el codigo 
         Pista: A = 1,
+        Excluye la Ñ
         
         Acertijo: El hombre que lo vendió no lo quería. El hombre que lo compró no lo necesitaba. El hombre que lo usó no lo conocía.
         
